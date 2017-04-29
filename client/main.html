@@ -1,0 +1,25 @@
+<head>
+  <title>inherit</title>
+</head>
+
+<body>
+  <h1>Astronomy - Parent/Child Export/Import Inheritance</h1>
+
+  <form>
+    <label>Name</label>
+    <input type="text" name="name" value=""/>
+
+    <label>Language</label>
+    <input type="text" name="language" value=""/>
+
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+  <h2> Results: </h2>
+  <ul>
+    {{#each humans}}
+      <li>{{name}} : {{language}}</li>
+    {{/each}}
+  </ul>
+
+</body>
